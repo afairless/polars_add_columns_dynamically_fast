@@ -1,0 +1,11 @@
+mamba create --name web_dashboard05 pandas numpy scikit-learn scipy matplotlib seaborn bokeh plotly dash flask streamz altair requests jupytext
+
+conda activate web_dashboard05
+
+mamba install -c conda-forge dash-bootstrap-components
+mamba install pyarrow
+mamba install -c conda-forge pandera
+
+pip install dash_daq
+
+conda env export > environment.yml
