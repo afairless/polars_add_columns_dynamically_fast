@@ -158,7 +158,7 @@ def time_function(repeat_n, time_func, func, *args) -> float:
     """
     Times function ('func') with provided arguments using provided timing
         function ('time_func') 
-    Runs timing 'repeat_n' times and returns the lowest elapsed time
+    Runs timing 'repeat_n' times and returns the lowest/fastest time
     """
 
     min_time = float('inf')
@@ -175,7 +175,6 @@ def time_function(repeat_n, time_func, func, *args) -> float:
         elapsed_time = end_time - start_time
         if elapsed_time < min_time:
             min_time = elapsed_time
-        # print(result)
 
     return min_time
 
